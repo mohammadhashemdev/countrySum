@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --text: calc(0.4rem + 1vw);
+  --h3: calc(0.6rem + 1vw);
+  --primary: rgb(0, 52, 73);
+  --primary-dead: rgb(88, 88, 88);
+}
+
+h3 {
+  font-size: var(--h3);
+  color: var(--primary);
+}
+
+body {
+  background-color: var(--primary);
+  font-family: sans-serif;
+}
+
+.container {
+  width: 90%;
+  min-height: 90vh;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.171);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.171);
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.container form {
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.container form .input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.container form .input input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0px 20px;
+  margin: 0px auto;
+  border: none;
+  outline: none;
+  color: var(--primary-dead);
+  -webkit-box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.158);
+          box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.158);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.container form .input input:focus {
+  -webkit-box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.329);
+          box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.329);
+}
+
+.container form ul {
+  list-style: none;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.171);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.171);
+  border-radius: 10px;
+}
+
+.container form ul li {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.container .welcome {
+  width: 100%;
+  margin: auto 0;
+  padding: 20px;
+  color: var(--primary);
+  font-size: 18px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 40px;
+}
+
+.container .welcome span {
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.container .welcome p {
+  margin-top: 40px;
+}
+
+.container .all-information-container {
+  padding-top: 5%;
+}
+
+.container .all-information-container .information-container {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.container .all-information-container .information-container .flags-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .all-information-container .information-container .flags-container .flag {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 290px;
+          flex: 1 1 290px;
+  background-color: white;
+  height: 250px;
+  margin: 5px;
+}
+
+.container .all-information-container .information-container .flags-container .national-flag {
+  overflow: hidden;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.158);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.158);
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.container .all-information-container .information-container .flags-container .national-flag img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .all-information-container .information-container .flags-container .national-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .all-information-container .information-container .flags-container .national-sign .coat-of-arms {
+  height: 150px;
+  width: 150px;
+  font-weight: 900;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+.container .all-information-container .information-container .flags-container .national-sign .coat-of-arms img {
+  width: 100%;
+}
+
+.container .all-information-container .information-container .details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .all-information-container .information-container .details--1,
+.container .all-information-container .information-container .details--2 {
+  padding-top: 20px;
+}
+
+.container .all-information-container .information-container .details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 350px;
+          flex: 1 1 350px;
+  margin: 5px;
+  min-height: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .all-information-container .information-container .details h3 {
+  font-size: var(--h3);
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.container .all-information-container .information-container .details h3 span {
+  color: var(--primary-dead);
+  font-size: var(--text);
+  font-weight: 500;
+}
+
+.container .borders-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  padding: 15px;
+}
+
+.container .borders-container .border-header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  opacity: 0;
+}
+
+.container .borders-container .border-item-container .border-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: var(--text);
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.336);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.336);
+  padding: 10px;
+}
+
+.container .borders-container .border-item-container .border-item img {
+  width: 50px;
+  height: 30px;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.336);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.336);
+}
+
+footer p {
+  font-size: var(--text);
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d6d6d6;
+  font-weight: 600;
+}
+
+footer p span {
+  font-weight: bolder;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  footer p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
